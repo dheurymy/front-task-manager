@@ -1,0 +1,97 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    width: 310px;
+    height: 410px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: var(--corPrincipal);
+}
+
+.register > h2 {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.register > p {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: smaller;
+}
+
+.register > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    width: 100%;
+}
+
+.register > form > input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+
+    background-color: var(--corFundo);
+}
+
+.register > form > input:hover {
+    border: 2px solid var(--corTexto);
+}
+
+.register > form > input::placeholder {
+    color: var(--corTexto);
+}
+
+.register > form > button {
+    
+    padding: 5px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+
+    background-color: var(--corFundo);
+    cursor: pointer;
+}
+
+.register > form > button:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.register > p {
+    width: 100%;
+
+    text-align: center;
+}
+
+.register > p > a > button {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    background-color: var(--corFundo);
+    color: var(--corTexto);
+    font-size: smaller;
+    
+    cursor: pointer;
+}
+
+.register > p > a > button:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 700;
+}

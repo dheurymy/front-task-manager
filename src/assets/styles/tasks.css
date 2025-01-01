@@ -1,0 +1,248 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5em;
+
+    width: 310px;
+
+    background-color: var(--corPrincipal);
+
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+}
+
+.tasks-header > button {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+
+    background-color: var(--corBotaoVermelho);
+    cursor: pointer;
+}
+
+.tasks-header > button:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.tasks-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    gap: 0.5em;
+    padding: 5px;
+}
+
+.tasks-add > input {
+    width: 308px;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+
+    background-color: var(--corFundo);
+}
+
+.tasks-add-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+    width: 310px;
+    font-size: small;
+    text-align: center;
+}
+
+.tasks-add-buttons > button {
+    padding: 3px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    width: 65px;
+    background-color: var(--corFundo);
+    cursor: pointer;
+}
+
+.tasks-add-buttons > button:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.tasks-add-buttons > select {
+    padding: 2px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    width: 90px;
+    background-color: var(--corFundo);
+    cursor: pointer;
+}
+
+.tasks-add-buttons > select:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.tasks-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 310px;
+
+    font-size: small;
+    text-align: center;
+}
+
+.tasks-filters > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+  
+    width: 80px;
+}
+
+.tasks-filters > div > select {
+    padding: 2px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    width: 65px;
+    background-color: var(--corFundo);
+    cursor: pointer;
+}
+
+.tasks-filters > div > select:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 310px;
+    padding: 5px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    width: 300px;
+
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    padding: 5px;
+
+    text-align: center;
+   
+}
+
+.finished {
+    border: 1px dashed var(--corTexto);
+}
+
+.finished > h3 {
+    text-decoration: line-through;
+}
+
+.task > h3 {
+    width: 100%;
+    text-align: left;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    width: 80px;
+
+    font-size: small;
+}
+
+.task-tag {
+    width: 80px;
+    height: 20px;
+    
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+
+    border: 1px solid var(--corTexto);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border: 1px solid var(--corTexto);
+    background-color: var(--corPrincipal);
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.Trabalho {
+    background-color: #8f82d8;
+}
+
+.Estudos {
+    background-color: #693561;
+}
+
+.Pessoal {
+    background-color: #4e9aad;
+}
+
+.concluida {
+    background-color: #0f793b;
+}
+
+.pendente {
+    background-color: #eeff00;
+}
+
+.task-details > button {
+    padding: 2px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    width: 82px;
+    
+    cursor: pointer;
+}
+
+.task-details > button:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.complete {
+    background-color: green;
+}
+
+.delete {
+    background-color: red;
+}

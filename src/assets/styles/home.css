@@ -1,0 +1,50 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2em;
+    
+    width: 310px;
+    height: 310px;
+
+    background-color: var(--corPrincipal);
+
+    border: 1px solid var(--corTexto);
+    
+    border-radius: 5px;
+}
+
+.home > p {
+    text-align: center;
+    color: var(--corTexto);
+    font-size: 0.8em;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
+}
+
+.buttons > a > button {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+    background-color: var(--corFundo);
+    color: var(--corTexto);
+    
+    
+    cursor: pointer;
+}
+
+.buttons > a > button:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 700;
+}
