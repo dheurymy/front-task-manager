@@ -11,6 +11,8 @@ const Tasks = () => {
   const [filterCategory, setFilterCategory] = useState(''); // Estado para a categoria de filtro
   const [filterStatus, setFilterStatus] = useState(''); // Estado para o status de filtro
   const [sortOrder, setSortOrder] = useState('A-Z'); // Estado para a direção de ordenação
+  
+  const [search, setSearch] = useState(""); // Estado para a busca
 
   const navigate = useNavigate();
 
@@ -119,8 +121,10 @@ const Tasks = () => {
   const filteredTasks = tasks.filter(task => {
     const matchesCategory = filterCategory ? task.category === filterCategory : true;
     const matchesStatus = filterStatus ? (filterStatus === 'Concluída' ? task.isCompleted : !task.isCompleted) : true;
+    
     return matchesCategory && matchesStatus;
-  });
+  }).filter(task => task.text.toLowerCase().includes(search.toLowerCase())
+);
 
   const sortedTasks = filteredTasks.sort((a, b) => {
     if (sortOrder === 'A-Z') {
@@ -202,6 +206,13 @@ const Tasks = () => {
           </select>
         </div>
       </div>
+
+    <div className='search'>
+        
+        <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Pesquisar Tarefa:'/>
+      
+    </div>
+
 
       <div className='tasks-list'>
         {sortedTasks.map(task => (

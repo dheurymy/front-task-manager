@@ -57,6 +57,16 @@
     background-color: var(--corFundo);
 }
 
+
+.tasks-add > input:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.tasks-add > input::placeholder {
+    padding-left: 5px;
+}
+
 .tasks-add-buttons {
     display: flex;
     flex-direction: row;
@@ -130,6 +140,24 @@
 .tasks-filters > div > select:hover {
     border: 2px solid var(--corTexto);
     font-weight: 600;
+}
+
+.search > input {
+    width: 308px;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid var(--corTexto);
+    border-radius: 5px;
+
+    background-color: var(--corFundo);
+}
+
+.search > input:hover {
+    border: 2px solid var(--corTexto);
+    font-weight: 600;
+}
+
+.search > input::placeholder {
+   padding-left: 5px;
 }
 
 .tasks-list {
